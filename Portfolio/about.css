@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins',sans-serif;
+}
+:root{
+    --bg-color:#081b29;
+    --second-bg-color:#112e42;
+    --text-color:#ededed;
+    --main-color:#00abf0;
+}
+.home{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+    background: var(--bg-color);
+    background-size: cover;
+    background-position:center;
+    
+}
+.navtool{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-items: center;
+}
+.about{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    gap: 2rem;
+    
+    padding-bottom: 6rem;
+}
+.heading{
+    color: transparent;
+    font-size: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: left;
+    letter-spacing: 3px;
+    -webkit-text-stroke: 3.5px var(--text-color);
+}
+
+span{
+    letter-spacing: 3px;
+    color: transparent;
+    -webkit-text-stroke: 3.5px var(--text-color);
+}
+
+.about-img{
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img img {
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid var(--text-color);
+}
+
+.about-img .circle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid var(--main-color);
+    border-top: .2rem solid var(--main-color);
+    border-top: .2rem solid var(--text-color);
+    border-top: .2rem solid var(--text-color);
+}
+
+.about-content{
+    
+    text-align: left;
+}
+
+.about-content h3 {
+    font-size: 3rem;
+    color: transparent;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 2px var(--main-color);
+}
+
+.about-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+    color: var(--text-color);
+    letter-spacing: 2px;
+}
+
+.btn-box.btns{
+    display: inline-block;
+    width: 15rem;
+}
